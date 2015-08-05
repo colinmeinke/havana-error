@@ -1,6 +1,6 @@
 {
   "name": "havana-error",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "An error response handler",
   "main": "dist/error.js",
   "scripts": {

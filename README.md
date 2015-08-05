@@ -52,14 +52,15 @@ or a library with an interchangeable API.
 
 ### Publish
 
-- `response.send`: A 404 error response for consumption
-  by a request/response dispatcher library.
+- `response.send`: Signifies that Havana error has handled
+  a response error, publishing the response data for
+  consumption by a request/response dispatcher.
 
 ### Subscribe
 
-- `response.error`: Signifies that all other response
-  handlers have failed to provide a response, so Havana error
-  should send a 404 response.
+- `response.error`: Allows a request/response dispatcher
+  to notify Havana error that all registered handlers have
+  failed to handled a request.
 
 ## ES2015+
 
