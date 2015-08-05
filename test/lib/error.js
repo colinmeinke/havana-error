@@ -1,8 +1,8 @@
 /* global describe it */
 
+import chai from 'chai';
 import Error from '../../dist/error.with-polyfill';
 import Event from 'havana-event';
-import chai from 'chai';
 
 const expect = chai.expect;
 
@@ -16,7 +16,7 @@ const error = new Error({
   },
 });
 
-describe( 'Server', () => {
+describe( 'Error', () => {
   describe( '_', () => {
     it( 'should be private', () => {
       expect( error ).to.not.have.property( '_' );
