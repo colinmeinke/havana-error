@@ -3736,8 +3736,6 @@ var _createClass = (function () { function defineProperties(target, props) { for
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-var name = 'error';
-
 var _ = new WeakMap();
 
 var Error = (function () {
@@ -3746,6 +3744,7 @@ var Error = (function () {
 
     var props = {
       'event': config.event,
+      'name': 'error',
       'reporting': config.reporting
     };
 
@@ -3758,6 +3757,7 @@ var Error = (function () {
     key: 'init',
     value: function init() {
       var event = _.get(this).event;
+      var name = _.get(this).name;
       var reporting = _.get(this).reporting;
 
       event.subscribe('response.error', function (data) {

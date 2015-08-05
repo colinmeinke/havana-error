@@ -45,7 +45,19 @@ describe( 'Server', () => {
       event.publish( 'response.error', {});
     });
 
-    it( 'should send a 404 status code', done => {
+    it( 'should send a name of error', done => {
+      const token = event.subscribe( 'response.send', data => {
+        event.unsubscribe( token );
+        expect( data.name ).to.equal( 'error' );
+        done();
+      });
+
+      event.publish( 'response.error', {
+        'id': 1,
+      });
+    });
+
+    it( 'should send a statusCode of 404', done => {
       const token = event.subscribe( 'response.send', data => {
         event.unsubscribe( token );
         expect( data.statusCode ).to.equal( 404 );
