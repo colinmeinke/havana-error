@@ -34,7 +34,7 @@ var Error = (function () {
 
       event.subscribe('response.error', function (data) {
         if (reporting.level > 0) {
-          reporting.reporter('-- No response. Error response sent');
+          reporting.reporter('-- Response sent from handler: error');
         }
 
         event.publish('response.send', {
