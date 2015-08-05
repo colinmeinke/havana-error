@@ -29,6 +29,12 @@ describe( 'Error', () => {
     });
   });
 
+  describe( 'name', () => {
+    it( 'should be private', () => {
+      expect( error ).to.not.have.property( 'name' );
+    });
+  });
+
   describe( 'reporting', () => {
     it( 'should be private', () => {
       expect( error ).to.not.have.property( 'reporting' );

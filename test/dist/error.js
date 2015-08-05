@@ -4,6 +4,10 @@
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
+var _chai = require('chai');
+
+var _chai2 = _interopRequireDefault(_chai);
+
 var _distErrorWithPolyfill = require('../../dist/error.with-polyfill');
 
 var _distErrorWithPolyfill2 = _interopRequireDefault(_distErrorWithPolyfill);
@@ -11,10 +15,6 @@ var _distErrorWithPolyfill2 = _interopRequireDefault(_distErrorWithPolyfill);
 var _havanaEvent = require('havana-event');
 
 var _havanaEvent2 = _interopRequireDefault(_havanaEvent);
-
-var _chai = require('chai');
-
-var _chai2 = _interopRequireDefault(_chai);
 
 var expect = _chai2['default'].expect;
 
@@ -28,7 +28,7 @@ var error = new _distErrorWithPolyfill2['default']({
   }
 });
 
-describe('Server', function () {
+describe('Error', function () {
   describe('_', function () {
     it('should be private', function () {
       expect(error).to.not.have.property('_');
@@ -38,6 +38,12 @@ describe('Server', function () {
   describe('event', function () {
     it('should be private', function () {
       expect(error).to.not.have.property('event');
+    });
+  });
+
+  describe('name', function () {
+    it('should be private', function () {
+      expect(error).to.not.have.property('name');
     });
   });
 
