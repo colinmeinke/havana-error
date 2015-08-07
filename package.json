@@ -1,6 +1,6 @@
 {
   "name": "havana-error",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "An error response handler",
   "main": "dist/error.js",
   "scripts": {
@@ -21,7 +21,8 @@
     "handler",
     "havana",
     "isomorphic",
-    "response"
+    "response",
+    "universal"
   ],
   "license": "ISC",
   "devDependencies": {
