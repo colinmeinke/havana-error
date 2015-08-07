@@ -28,9 +28,11 @@ var Error = (function () {
   _createClass(Error, [{
     key: 'init',
     value: function init() {
-      var event = _.get(this).event;
-      var name = _.get(this).name;
-      var reporting = _.get(this).reporting;
+      var _$get = _.get(this);
+
+      var event = _$get.event;
+      var name = _$get.name;
+      var reporting = _$get.reporting;
 
       event.subscribe('response.error', function (data) {
         if (reporting.level > 0) {
