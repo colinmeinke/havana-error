@@ -1,8 +1,8 @@
 {
   "name": "havana-error",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "An error response handler",
-  "main": "dist/error.js",
+  "main": "dist/error.server.js",
   "scripts": {
     "test": "gulp test"
   },
@@ -27,12 +27,20 @@
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "4.0.x",
+    "babelify": "6.1.x",
+    "browserify": "11.0.x",
     "chai": "3.2.x",
     "gulp": "3.9.x",
     "gulp-babel": "5.1.x",
     "gulp-concat": "2.6.x",
     "gulp-eslint": "0.15.x",
+    "gulp-insert": "0.5.x",
     "gulp-mocha": "2.1.x",
-    "havana-event": "0.x"
+    "gulp-rename": "1.2.x",
+    "havana-event": "0.x",
+    "vinyl-source-stream": "1.1.x"
+  },
+  "browser": {
+    "dist/error.server.js": "dist/error.browser.js"
   }
 }

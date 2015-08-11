@@ -72,8 +72,15 @@ However, by default this module will use an ES5
 compatible file that has been compiled using
 [Babel](https://babeljs.io).
 
+In the `dist` directory there are four files, the default
+is `error.server.js`. The default when using a client-side
+bundler that supports the
+[browser field](https://gist.github.com/defunctzombie/4339901)
+spec is `error.browser.js`.
+
 Havana error currently requires the 
 [Babel polyfill](https://babeljs.io/docs/usage/polyfill).
-In the `dist` directory there are two files, the default
-`error.js` and `error.with-polyfill.js` that includes
-the Babel browser polyfill.
+You are expected to supply this yourself. However, as a
+courtesy you will also find `error.server.with-polyfill.js`
+and `error.browser.with-polyfill.js` in the `dist`
+directory.

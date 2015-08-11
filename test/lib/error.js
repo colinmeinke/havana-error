@@ -1,7 +1,7 @@
 /* global describe it */
 
 import chai from 'chai';
-import Error from '../../dist/error.with-polyfill';
+import Error from '../../dist/error.server.with-polyfill';
 import Event from 'havana-event';
 
 const expect = chai.expect;

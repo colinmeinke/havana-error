@@ -8,9 +8,9 @@ var _chai = require('chai');
 
 var _chai2 = _interopRequireDefault(_chai);
 
-var _distErrorWithPolyfill = require('../../dist/error.with-polyfill');
+var _distErrorServerWithPolyfill = require('../../dist/error.server.with-polyfill');
 
-var _distErrorWithPolyfill2 = _interopRequireDefault(_distErrorWithPolyfill);
+var _distErrorServerWithPolyfill2 = _interopRequireDefault(_distErrorServerWithPolyfill);
 
 var _havanaEvent = require('havana-event');
 
@@ -20,7 +20,7 @@ var expect = _chai2['default'].expect;
 
 var event = new _havanaEvent2['default']();
 
-var error = new _distErrorWithPolyfill2['default']({
+var error = new _distErrorServerWithPolyfill2['default']({
   'event': event,
   'reporting': {
     'level': 0,
