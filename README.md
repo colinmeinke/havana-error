@@ -1,5 +1,6 @@
 # Havana error
 
+[![NPM version](https://badge.fury.io/js/havana-error.svg)](http://badge.fury.io/js/havana-error)
 [![Build Status](https://travis-ci.org/colinmeinke/havana-error.svg?branch=master)](https://travis-ci.org/colinmeinke/havana-error)
 [![Dependency status](https://david-dm.org/colinmeinke/havana-error.svg)](https://david-dm.org/colinmeinke/havana-error.svg)
 
