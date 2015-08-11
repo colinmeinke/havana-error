@@ -1,6 +1,7 @@
 # Havana error
 
 [![Build Status](https://travis-ci.org/colinmeinke/havana-error.svg?branch=master)](https://travis-ci.org/colinmeinke/havana-error)
+[![Dependency status](https://david-dm.org/colinmeinke/havana-error.svg)](https://david-dm.org/colinmeinke/havana-error.svg)
 
 An error response handler.
 
